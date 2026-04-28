@@ -8,35 +8,42 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Paper & Ink palette */
+    --background: 42 26% 95%;        /* #f5f3ee */
+    --foreground: 0 0% 8%;           /* #141414 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 42 26% 95%;
+    --card-foreground: 0 0% 8%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 42 26% 95%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 0% 5%;              /* #0d0d0d */
+    --primary-foreground: 42 26% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 36 22% 90%;         /* #ece7dd */
+    --secondary-foreground: 0 0% 8%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 36 22% 90%;
+    --muted-foreground: 0 0% 36%;    /* quiet ink */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 36 22% 90%;
+    --accent-foreground: 0 0% 8%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 60% 40%;
+    --destructive-foreground: 42 26% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 36 18% 86%;            /* #e8e4dd */
+    --input: 36 18% 86%;
+    --ring: 0 0% 8%;
 
-    --radius: 0.5rem;
+    --ink: 0 0% 5%;
+    --ink-soft: 0 0% 18%;
+    --paper: 42 26% 95%;
+    --paper-deep: 36 22% 90%;
+    --rule: 36 18% 86%;
+
+    --radius: 0.125rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -99,7 +106,52 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  ::selection {
+    background: hsl(var(--ink));
+    color: hsl(var(--paper));
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-foreground;
   }
 }
+
+@layer utilities {
+  .eyebrow {
+    @apply font-display text-[0.7rem] uppercase tracking-[0.22em] text-muted-foreground;
+  }
+  .rule {
+    @apply border-t border-[hsl(var(--rule))];
+  }
+  .link-underline {
+    @apply relative inline-block;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 300ms ease;
+  }
+  .link-underline:hover {
+    background-size: 0% 1px;
+    background-position: 100% 100%;
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 700ms ease, transform 700ms ease;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
