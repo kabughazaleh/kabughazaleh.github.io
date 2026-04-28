@@ -14,7 +14,7 @@ const Index = () => {
       "@context": "https://schema.org",
       "@type": "Person",
       name: "Khalid Abughazaleh",
-      jobTitle: "Technical Customer Interface & Product Development Engineer",
+      jobTitle: "Product Development Engineer & Technical Customer Interface",
       address: { "@type": "PostalAddress", addressLocality: "Hillsboro", addressRegion: "OR", addressCountry: "US" },
       sameAs: ["https://www.linkedin.com/in/kabughazaleh/"],
     };
@@ -22,7 +22,9 @@ const Index = () => {
     s.type = "application/ld+json";
     s.text = JSON.stringify(ld);
     document.head.appendChild(s);
-    return () => { document.head.removeChild(s); };
+    return () => {
+      document.head.removeChild(s);
+    };
   }, []);
 
   return (
