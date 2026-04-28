@@ -1,0 +1,61 @@
+import { Reveal } from "./Reveal";
+import { SectionHeader } from "./SectionHeader";
+
+const groups = [
+  {
+    label: "Engineering & Test",
+    items: [
+      "Post-silicon verification",
+      "Design of experiment (DOE)",
+      "ATE & bench measurement",
+      "Mixed-signal, digital, and RF debug",
+      "Fab corner & parametric analysis",
+      "Product ramp & release",
+    ],
+  },
+  {
+    label: "Tools & Platforms",
+    items: [
+      "IQfact+, Litepoint IQxel",
+      "Teradyne, LTX",
+      "LabVIEW, MATLAB",
+      "Spotfire, JMP",
+      "AWR Microwave Office",
+      "Perplexity / ChatGPT, MS Project",
+    ],
+  },
+  {
+    label: "Languages & Communication",
+    items: [
+      "Python, C++",
+      "Unix / Linux shell scripting",
+      "Technical writing & documentation",
+      "Customer-facing engagement",
+      "Mentoring & cross-team collaboration",
+      "Pre- and post-sale support",
+    ],
+  },
+];
+
+export const Skills = () => (
+  <section id="skills" className="py-24 md:py-32 border-t border-rule">
+    <div className="mx-auto max-w-6xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
+      <SectionHeader number="02" label="Core Skills" title="Where I tend to be useful." />
+
+      <div className="col-span-12 md:col-span-9 md:col-start-4 grid grid-cols-1 sm:grid-cols-3 gap-10">
+        {groups.map((g, i) => (
+          <Reveal key={g.label} delay={i * 100}>
+            <h3 className="font-display text-sm uppercase tracking-[0.18em] text-ink mb-5">
+              {g.label}
+            </h3>
+            <ul className="space-y-2.5 font-body text-[0.95rem] leading-relaxed text-ink-soft">
+              {g.items.map((it) => (
+                <li key={it}>{it}</li>
+              ))}
+            </ul>
+          </Reveal>
+        ))}
+      </div>
+    </div>
+  </section>
+);
