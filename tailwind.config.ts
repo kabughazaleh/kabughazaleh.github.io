@@ -13,7 +13,16 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ['Outfit', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        body: ['Figtree', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
       colors: {
+        ink: "hsl(var(--ink))",
+        "ink-soft": "hsl(var(--ink-soft))",
+        paper: "hsl(var(--paper))",
+        "paper-deep": "hsl(var(--paper-deep))",
+        rule: "hsl(var(--rule))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
