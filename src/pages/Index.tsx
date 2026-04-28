@@ -14,7 +14,7 @@ const Index = () => {
       "@context": "https://schema.org",
       "@type": "Person",
       name: "Khalid Abughazaleh",
-      jobTitle: "Product Development Engineer & Technical Customer Interface",
+      jobTitle: "Hi Product Development Engineer & Technical Customer Interface",
       address: { "@type": "PostalAddress", addressLocality: "Hillsboro", addressRegion: "OR", addressCountry: "US" },
       sameAs: ["https://www.linkedin.com/in/kabughazaleh/"],
     };
