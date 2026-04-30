@@ -38,7 +38,7 @@ const groups = [
 ];
 
 export const Skills = () => (
-  <section id="skills" className="py-24 md:py-32 border-t border-rule">
+  <section id="skills" className="py-16 md:py-20 border-t border-rule">
     <div className="mx-auto max-w-6xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
       <SectionHeader number="02" label="Core Skills" title="Where I tend to be useful." />
 
