@@ -8,40 +8,40 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Paper & Ink palette */
-    --background: 42 26% 95%;        /* #f5f3ee */
-    --foreground: 0 0% 8%;           /* #141414 */
+    /* Bone & Rust palette */
+    --background: 42 26% 94%;        /* #f4f1ea bone */
+    --foreground: 30 8% 10%;         /* #1c1b18 graphite */
 
-    --card: 42 26% 95%;
-    --card-foreground: 0 0% 8%;
+    --card: 42 26% 94%;
+    --card-foreground: 30 8% 10%;
 
-    --popover: 42 26% 95%;
-    --popover-foreground: 0 0% 8%;
+    --popover: 42 26% 94%;
+    --popover-foreground: 30 8% 10%;
 
-    --primary: 0 0% 5%;              /* #0d0d0d */
-    --primary-foreground: 42 26% 95%;
+    --primary: 14 60% 43%;           /* #b04a2c burnt rust */
+    --primary-foreground: 42 26% 94%;
 
-    --secondary: 36 22% 90%;         /* #ece7dd */
-    --secondary-foreground: 0 0% 8%;
+    --secondary: 36 26% 86%;         /* #e6dfd1 clay band */
+    --secondary-foreground: 30 8% 10%;
 
-    --muted: 36 22% 90%;
-    --muted-foreground: 0 0% 36%;    /* quiet ink */
+    --muted: 36 26% 86%;
+    --muted-foreground: 30 8% 32%;
 
-    --accent: 36 22% 90%;
-    --accent-foreground: 0 0% 8%;
+    --accent: 14 60% 43%;            /* rust accent */
+    --accent-foreground: 42 26% 94%;
 
     --destructive: 0 60% 40%;
-    --destructive-foreground: 42 26% 95%;
+    --destructive-foreground: 42 26% 94%;
 
-    --border: 36 18% 86%;            /* #e8e4dd */
-    --input: 36 18% 86%;
-    --ring: 0 0% 8%;
+    --border: 36 20% 82%;
+    --input: 36 20% 82%;
+    --ring: 14 60% 43%;
 
-    --ink: 0 0% 5%;
-    --ink-soft: 0 0% 18%;
-    --paper: 42 26% 95%;
-    --paper-deep: 36 22% 90%;
-    --rule: 36 18% 86%;
+    --ink: 30 8% 10%;
+    --ink-soft: 30 8% 28%;
+    --paper: 42 26% 94%;
+    --paper-deep: 36 26% 86%;
+    --rule: 36 20% 82%;
 
     --radius: 0.125rem;
 
