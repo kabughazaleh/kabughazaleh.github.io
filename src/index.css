@@ -144,6 +144,19 @@ All colors MUST be HSL.
     background-size: 0% 1px;
     background-position: 100% 100%;
   }
+  .section-divider {
+    position: relative;
+  }
+  .section-divider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 1px;
+    background: hsl(var(--rule));
+  }
   .reveal {
     opacity: 0;
     transform: translateY(12px);
