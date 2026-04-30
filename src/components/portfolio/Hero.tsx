@@ -1,7 +1,7 @@
 import { Reveal } from "./Reveal";
 
 export const Hero = () => (
-  <section id="top" className="relative pt-28 md:pt-36 pb-16 md:pb-20">
+  <section id="top" className="relative pt-28 md:pt-36 pb-14 md:pb-16">
     <div className="mx-auto max-w-6xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
       <Reveal className="col-span-12 md:col-span-3">
         <p className="eyebrow">Portfolio · 2026</p>
