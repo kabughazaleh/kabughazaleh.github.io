@@ -1,81 +1,65 @@
-## Portfolio site for Khalid Abughazaleh
+## Goal
 
-A single-page, recruiter-friendly portfolio positioning Khalid as a technically deep, customer-aware engineer who connects complex pieces into complete solutions. Editorial tone — quietly creative, never flashy.
+Let you assign a **distinct background tone** to each section independently, and pick a **separator (rule) treatment** that's clearly visible — instead of the current single-palette mix where everything sits on the same bone background.
 
-### Design direction
+Currently every section uses the same `bg-background` (bone) and a faint `border-rule` line between them — that's why it reads as monotonous.
 
-- **Palette (Paper & Ink):** background `#f5f3ee`, soft divider `#e8e4dd`, body ink `#2d2d2d`, headline ink `#0d0d0d`. No accent color — typography and contrast do the work.
-- **Typography:** Outfit for headings (tight tracking, large display sizes), Figtree for body. Small-caps eyebrow labels number each section (01 — About, 02 — Core Skills, etc.).
-- **Layout:** Asymmetric 12-column grid. Narrow left column for section labels and meta; wider right column for content. Generous whitespace, hairline dividers between sections, no cards or shadows.
-- **Motion:** Subtle fade/translate-in on scroll and a quiet underline hover on links. No parallax or gradients.
-- **Mobile:** Columns collapse to a single column; meta labels move above content. Type scales down gracefully.
+## How the picker will work
 
-### Page structure
+I'll ask you in **three rounds** of visual choices so you stay in control instead of getting a preset:
 
-```text
-┌─────────────────────────────────────────────────────────┐
-│  KA              About · Skills · Work · Notes · Contact│
-├─────────────────────────────────────────────────────────┤
-│  Portfolio · 2026                                       │
-│                                                         │
-│  Khalid Abughazaleh                                     │
-│  Technical Customer Interface                           │
-│  & Product Development Engineer                         │
-│                                                         │
-│  A short tagline about seeing systems as a canvas       │
-│  and connecting the pieces into something complete.     │
-│                                                         │
-│  Hillsboro, OR  ·  LinkedIn →                           │
-└─────────────────────────────────────────────────────────┘
-```
+### Round 1 — Pick a tone for each of the 7 sections
 
-**1. Hero** — Eyebrow ("Portfolio · 2026"), name in large display type, role on two lines, one-sentence tagline, then `Hillsboro, OR · LinkedIn`. No photo, no buttons.
+For each section, you'll pick one of 5 background tones. The 5 tones share the Bone & Rust family so nothing clashes, but each has a clearly different value:
 
-**2. About (01)** — Resume summary rewritten in first person, warmer and more human. Introduces the "systems as a canvas" idea without using the phrase literally. ~3 short paragraphs.
+| Tone | Hex | Feel |
+|---|---|---|
+| Bone (current) | `#f4f1ea` | Lightest paper |
+| Clay | `#e6dfd1` | Warm muted band |
+| Stone | `#d8cfbe` | Deeper warm neutral |
+| Graphite | `#1c1b18` | Dark inverted (white text) |
+| Rust wash | `#f0d9ce` | Soft tinted-rust band |
 
-**3. Core Skills (02)** — Three grouped columns (stack on mobile), label + plain-text list. No icons or progress bars.
-- *Engineering & Test* — Post-silicon verification, DOE, ATE & bench, mixed-signal/digital/RF debug, fab corner analysis
-- *Tools & Platforms* — IQfact+, LabVIEW, LTX, Litepoint, Teradyne; Spotfire, JMP, MATLAB, AWR Microwave Office
-- *Languages & Communication* — Python, C++, Unix/Linux shell; technical writing, customer engagement, mentoring
+Sections to assign:
+1. Hero
+2. About
+3. Skills
+4. Accomplishments
+5. Experience
+6. Testimonials
+7. Contact
 
-**4. Selected Accomplishments (03)** — One short paragraph per role, taken verbatim (lightly trimmed for flow) from the italicized summary line under each job in the resume — no bullet points. Each entry shows company + role in the meta column and the italicized summary as the accomplishment text. Treated as the editorial centerpiece of the page.
+I'll present this as one question per section (7 visual_choice questions, batched 4 + 3) so you can mix freely. A common pattern is alternating Bone / Clay / Bone / Stone… but you decide.
 
-Order follows resume: Teradyne LitePoint → Qorvo → Dongbu HiTek → Apolent/TI → Texas Instruments → Teradyne. (Final wording will be pulled directly from the resume PDF — point me at any line you want rephrased.)
+### Round 2 — Pick a separator style
 
-**5. Experience Highlights (04)** — Compact timeline, one line per role: company · role · years, with a short tag (e.g. "RF · Test · Customer") in the meta column. No descriptions here — the storytelling lives in section 03, this is the at-a-glance career arc.
-- Teradyne (LitePoint) — Field Application Engineer · 2022–2024
-- Qorvo (formerly TriQuint) — Product Development Engineer · 2013–2022
-- Dongbu HiTek USA — RF Applications & Bench Verification · 2011–2012
-- Apolent / Texas Instruments contract — Principal Engineer · 2010–2011
-- Texas Instruments — Product Engineer · 2003–2009
-- Teradyne — Test Applications · 2000–2003
+Right now separators are a 1px hairline that nearly disappears against Clay. Options:
 
-Education line at the bottom: MSEE, UT Dallas · BSEE, UT Austin.
+| Style | Description |
+|---|---|
+| Hairline (current) | Thin 1px border in muted tone |
+| Bold rule | 2px line in graphite — confident editorial |
+| Rust hairline | 1px in burnt rust — colored accent line |
+| Double rule | Two 1px lines stacked, classic print |
+| No line, tone only | Remove the line; rely purely on background contrast |
+| Inset short rule | 64px centered rule (like the existing `.section-divider`) |
 
-**6. Testimonials (05)** — Editorial pull-quote treatment: large quote mark, italic quote, attribution in small caps below (name · title · relationship). All 8 LinkedIn recommendations included, lightly trimmed for length where needed:
+### Round 3 — Pick a separator color
 
-- **Jwalin Dholakia** — RF Product Development Engineer, Qorvo (same team)
-- **Darrell Lupo** — Principal Product Engineer, Qorvo (internal customer)
-- **Jennifer Smith Poyaoan** — Field Application Manager, LitePoint (manager)
-- **Brian Kleven** — Colleague, 9+ years
-- **Chi-cheng Lin** — Sr. Applications Engineer, LitePoint (same team)
-- **Benny Bologna** — RF/Wireless HW Design & Validation (client)
-- **Roshmi James** — Technical Program Manager, LitePoint (manager)
-- **Mike Meyers** — Applications Engineer, Texas Instruments (same team)
+Independent of style, pick the color:
+- Graphite (`#1c1b18`)
+- Rust (`#b04a2c`)
+- Stone (`#d8cfbe`)
+- Current muted (`#d8d2c4`)
 
-Layout: quotes one per row in the wide column, separated by hairline dividers — no cards, no carousel.
+## Technical notes
 
-**7. Contact (06)** — Minimal footer block: "Hillsboro, OR" and "LinkedIn →" as a single underlined link to `https://www.linkedin.com/in/kabughazaleh/`. Tiny copyright line below.
+- Add a `data-tone` (or className like `tone-clay`, `tone-stone`, `tone-graphite`, `tone-rust`) on each `<section>` in `Index.tsx`'s child components.
+- Define those tone classes in `src/index.css` under `@layer components`, each setting its own `background-color` and (for `tone-graphite`) inverting `--foreground`, `--ink`, `--ink-soft`, and `--rule` locally so text and eyebrows stay legible.
+- Replace `border-t border-rule` on each section with a single shared `.section-rule-*` utility driven by your Round 2 + 3 choice (e.g. `.section-rule-bold-graphite { border-top: 2px solid hsl(var(--ink)); }`).
+- No component logic changes — purely class swaps + CSS additions.
+- Hero has no top border today; that stays.
 
-### Navigation
+## Deliverable after approval
 
-Thin sticky top bar with initials (KA) on the left and section anchors on the right (About · Skills · Work · Notes · Contact). On mobile, anchors collapse into a simple text "Menu" toggle — no hamburger icon.
-
-### Technical notes
-
-- Built with the existing React + Vite + Tailwind + shadcn stack.
-- Paper & Ink HSL tokens added to `index.css`; Outfit + Figtree loaded via Google Fonts in `index.html` and wired into `tailwind.config.ts`.
-- Single page rendered in `src/pages/Index.tsx`, broken into section components under `src/components/portfolio/` (Hero, About, Skills, Accomplishments, Experience, Testimonials, Contact, Nav).
-- Italicized role summaries will be parsed directly from the uploaded resume PDF during implementation.
-- Smooth in-page anchor scrolling; semantic HTML and proper heading hierarchy for accessibility and ATS friendliness.
-- No backend. Fully static, fast, mobile responsive.
+Once you switch to default mode and answer the three rounds, I'll apply the per-section tones and the chosen separator treatment in one pass and you'll see all 7 sections re-skin live.
