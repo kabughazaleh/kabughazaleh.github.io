@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Bone & Rust palette */
-    --background: 36 22% 88%;        /* light clay — subtle contrast so card shadows read */
+    --background: 36 22% 91%;        /* very light clay — subtle contrast for floating cards */
     --foreground: 30 8% 10%;         /* #1c1b18 graphite */
 
     --card: 42 26% 94%;
