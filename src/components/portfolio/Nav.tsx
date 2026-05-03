@@ -22,8 +22,12 @@ export const Nav = () => {
 
   const handleNav = (href: string) => {
     setOpen(false);
-    const el = document.querySelector(href);
-    if (el) (el as HTMLElement).scrollIntoView({ behavior: "smooth", block: "start" });
+    const el = document.querySelector(href) as HTMLElement | null;
+    if (el) {
+      const offset = 80;
+      const top = el.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
   };
 
   return (
