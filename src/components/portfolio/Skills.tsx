@@ -48,7 +48,7 @@ export const Skills = () => (
             <h3 className="font-display text-sm uppercase tracking-[0.18em] text-ink mb-5 min-h-[2.5rem]">
               {g.label}
             </h3>
-            <ul className="space-y-2.5 font-body text-[0.95rem] leading-relaxed text-ink-soft">
+            <ul className="space-y-2 font-body text-[0.95rem] leading-relaxed text-ink-soft">
               {g.items.map((it) => (
                 <li key={it}>{it}</li>
               ))}
