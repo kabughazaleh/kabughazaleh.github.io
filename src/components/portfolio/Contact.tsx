@@ -2,7 +2,7 @@ import { Reveal } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
 
 export const Contact = () => (
-  <section id="contact" className="py-12 md:py-16 border-t border-rule">
+  <section id="contact" className="section-card mx-auto max-w-7xl my-6 md:my-8 px-2 py-12 md:py-16">
     <div className="mx-auto max-w-7xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
       <SectionHeader number="06" label="Contact" title="Where to find me." />
 
