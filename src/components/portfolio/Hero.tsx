@@ -14,11 +14,11 @@ export const Hero = () => (
           </h1>
         </Reveal>
 
-        <Reveal delay={220} className="mt-10 md:mt-14 grid grid-cols-12 gap-6 items-baseline">
-          <p className="col-span-12 md:col-span-7 font-display text-xl md:text-2xl leading-snug text-ink-soft font-light">
+        <Reveal delay={220} className="mt-10 md:mt-14 max-w-2xl space-y-6">
+          <p className="font-display text-xl md:text-2xl leading-snug text-ink-soft font-light">
             Technical Customer Interface &<br className="hidden md:block" /> Product Development Engineer.
           </p>
-          <p className="col-span-12 md:col-span-5 font-body text-base md:text-[1.05rem] leading-relaxed text-ink-soft">
+          <p className="font-body text-base md:text-[1.05rem] leading-relaxed text-ink-soft">
             Two decades of bringing RF, silicon, and systems together — quietly, carefully, and with the customer in the room.
           </p>
         </Reveal>
