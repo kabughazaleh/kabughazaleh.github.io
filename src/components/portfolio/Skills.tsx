@@ -5,6 +5,7 @@ const groups = [
   {
     label: "Engineering & Test",
     items: [
+      "Customer-facing engagement",
       "Post-silicon verification",
       "Design of experiment (DOE)",
       "ATE & bench measurement",
