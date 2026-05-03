@@ -3,7 +3,7 @@ import { SectionHeader } from "./SectionHeader";
 
 export const About = () => (
   <section id="about" className="py-12 md:py-16 border-t border-rule">
-    <div className="mx-auto max-w-6xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
+    <div className="mx-auto max-w-7xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
       <SectionHeader number="01" label="About" title="A practitioner who likes the whole picture." />
 
       <div className="col-span-12 md:col-span-8 md:col-start-5 space-y-6 font-body text-[1.05rem] md:text-[1.15rem] leading-[1.7] text-ink-soft">

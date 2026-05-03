@@ -12,7 +12,7 @@ const roles = [
 
 export const Experience = () => (
   <section id="experience" className="py-12 md:py-16 border-t border-rule">
-    <div className="mx-auto max-w-6xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
+    <div className="mx-auto max-w-7xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
       <SectionHeader number="04" label="Experience Highlights" title="The arc, at a glance." />
 
       <div className="col-span-12 md:col-span-9 md:col-start-4">
