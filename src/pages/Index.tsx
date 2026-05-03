@@ -6,6 +6,7 @@ import { Accomplishments } from "@/components/portfolio/Accomplishments";
 import { Experience } from "@/components/portfolio/Experience";
 import { Testimonials } from "@/components/portfolio/Testimonials";
 import { Contact } from "@/components/portfolio/Contact";
+import { BgPicker } from "@/components/portfolio/BgPicker";
 import { useEffect } from "react";
 
 const Index = () => {
