@@ -5,6 +5,7 @@ const groups = [
   {
     label: "Engineering & Test",
     items: [
+      "Customer-facing engagement",
       "Post-silicon verification",
       "Design of experiment (DOE)",
       "ATE & bench measurement",
@@ -30,7 +31,6 @@ const groups = [
       "Python, C++",
       "Unix / Linux shell scripting",
       "Technical writing & documentation",
-      "Customer-facing engagement",
       "Mentoring & cross-team collaboration",
       "Pre- and post-sale support",
     ],
