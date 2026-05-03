@@ -132,6 +132,9 @@ All colors MUST be HSL.
   .rule {
     @apply border-t border-[hsl(var(--rule))];
   }
+  .section-rule {
+    border-top: 2px solid hsl(var(--ink));
+  }
   .link-underline {
     @apply relative inline-block;
     background-image: linear-gradient(currentColor, currentColor);
