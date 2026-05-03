@@ -130,7 +130,7 @@ All colors MUST be HSL.
     @apply font-display text-[0.7rem] uppercase tracking-[0.22em] text-muted-foreground;
   }
   .rule {
-    @apply border-t border-[hsl(var(--rule))];
+    border-top: 2px solid hsl(var(--rule));
   }
   .link-underline {
     @apply relative inline-block;
