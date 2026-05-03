@@ -11,7 +11,6 @@ const groups = [
       "Design of experiment (DOE)",
       "ATE & bench measurement",
       "Mixed-signal, digital, and RF debug",
-      "Statistical data analysis",
     ],
   },
   {
@@ -28,6 +27,7 @@ const groups = [
   {
     label: "Programming & Communication",
     items: [
+      "Statistical data analysis",
       "Python, C++",
       "Unix / Linux shell scripting",
       "Technical writing & documentation",
