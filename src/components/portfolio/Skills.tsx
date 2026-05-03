@@ -40,7 +40,7 @@ const groups = [
 export const Skills = () => (
   <section id="skills" className="section-card mx-auto max-w-7xl my-6 md:my-8 px-2 py-12 md:py-16">
     <div className="mx-auto max-w-7xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
-      <SectionHeader number="02" label="Core Skills" title="Where I tend to be useful." />
+      <SectionHeader number="02" label="Core Skills" title="Where I am useful." />
 
       <div className="col-span-12 md:col-span-9 md:col-start-4 grid grid-cols-1 sm:grid-cols-3 gap-10">
         {groups.map((g, i) => (
