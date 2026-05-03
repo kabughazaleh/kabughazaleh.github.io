@@ -1,5 +1,12 @@
 import { Reveal } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const quotes = [
   {
