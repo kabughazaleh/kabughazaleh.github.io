@@ -2,7 +2,7 @@ import { Reveal } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
 
 export const Contact = () => (
-  <section id="contact" className="py-16 md:py-20 border-t border-rule">
+  <section id="contact" className="py-16 md:py-20 section-rule">
     <div className="mx-auto max-w-6xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
       <SectionHeader number="06" label="Contact" title="Where to find me." />
 
@@ -28,7 +28,7 @@ export const Contact = () => (
       </div>
     </div>
 
-    <footer className="mt-24 md:mt-32 border-t border-rule">
+    <footer className="mt-24 md:mt-32 section-rule">
       <div className="mx-auto max-w-6xl px-6 md:px-10 py-8 flex flex-wrap justify-between gap-4">
         <p className="font-body text-xs uppercase tracking-[0.2em] text-ink-soft">
           Khalid Abughazaleh — Portfolio
