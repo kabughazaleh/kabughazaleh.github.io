@@ -9,7 +9,7 @@ export const Hero = () => (
 
       <div className="col-span-12 md:col-span-9 md:col-start-4">
         <Reveal delay={80}>
-          <h1 className="font-display font-light tracking-[-0.02em] text-[2.75rem] sm:text-[3.75rem] md:text-[5.5rem] lg:text-[6.25rem] leading-[0.95] text-ink">
+          <h1 className="font-display font-light tracking-[-0.02em] text-[2rem] sm:text-[2.75rem] md:text-[3.75rem] lg:text-[4.5rem] leading-[1.0] text-ink">
             Khalid<br />Abughazaleh
           </h1>
         </Reveal>
