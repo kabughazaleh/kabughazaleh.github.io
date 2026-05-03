@@ -29,7 +29,7 @@ export const Nav = () => {
   return (
     <nav
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
-        scrolled ? "bg-paper/85 backdrop-blur-sm border-b border-rule" : "bg-transparent"
+        scrolled ? "bg-background/85 backdrop-blur-sm" : "bg-transparent"
       }`}
     >
       <div className="mx-auto max-w-6xl px-6 md:px-10">
