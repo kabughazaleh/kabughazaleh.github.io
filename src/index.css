@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Bone & Rust palette */
-    --background: 42 26% 94%;        /* #f4f1ea bone */
+    --background: 36 22% 89%;        /* #e6dfd1 clay — page bg, sections float as bone cards */
     --foreground: 30 8% 10%;         /* #1c1b18 graphite */
 
     --card: 42 26% 94%;
@@ -131,6 +131,11 @@ All colors MUST be HSL.
   }
   .rule {
     border-top: 1px solid hsl(var(--rule));
+  }
+  .section-card {
+    background: hsl(var(--paper));
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px hsl(30 8% 10% / 0.04), 0 12px 32px -16px hsl(30 8% 10% / 0.10);
   }
   .section-rule {
     position: relative;

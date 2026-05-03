@@ -38,7 +38,7 @@ const groups = [
 ];
 
 export const Skills = () => (
-  <section id="skills" className="py-12 md:py-16 section-rule">
+  <section id="skills" className="section-card mx-auto max-w-7xl my-6 md:my-8 px-2 py-12 md:py-16">
     <div className="mx-auto max-w-7xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
       <SectionHeader number="02" label="Core Skills" title="Where I tend to be useful." />
 
