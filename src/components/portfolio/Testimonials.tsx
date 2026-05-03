@@ -61,7 +61,7 @@ const quotes = [
 ];
 
 export const Testimonials = () => (
-  <section id="testimonials" className="py-12 md:py-16 border-t-2 border-rule">
+  <section id="testimonials" className="py-12 md:py-16 border-t border-rule">
     <div className="mx-auto max-w-6xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
       <SectionHeader number="05" label="In Their Words" title="What people who've worked with me have said." />
 
