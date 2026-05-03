@@ -1,5 +1,12 @@
 import { Reveal } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const quotes = [
   {
@@ -61,28 +68,38 @@ const quotes = [
 ];
 
 export const Testimonials = () => (
-  <section id="testimonials" className="py-16 md:py-20 border-t-2 border-rule">
+  <section id="testimonials" className="py-12 md:py-14 border-t-2 border-rule">
     <div className="mx-auto max-w-6xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
       <SectionHeader number="05" label="In Their Words" title="What people who've worked with me have said." />
 
-      <div className="col-span-12 md:col-span-9 md:col-start-4 divide-y divide-rule border-y border-rule">
-        {quotes.map((q, i) => (
-          <Reveal key={q.name} delay={i * 40} as="article">
-            <div className="py-10 md:py-12 grid grid-cols-12 gap-x-6 gap-y-4">
-              <div className="col-span-12 md:col-span-3">
-                <span aria-hidden className="font-display text-5xl leading-none text-ink">"</span>
-              </div>
-              <div className="col-span-12 md:col-span-9">
-                <p className="font-display italic font-light text-[1.15rem] md:text-[1.3rem] leading-[1.55] text-ink">
-                  {q.quote}
-                </p>
-                <p className="mt-6 eyebrow">
-                  {q.name} · <span className="text-ink-soft normal-case tracking-normal font-body text-[0.78rem]">{q.title}</span> · {q.relation}
-                </p>
-              </div>
+      <div className="col-span-12 md:col-span-9 md:col-start-4">
+        <Reveal>
+          <Carousel opts={{ loop: true, align: "start" }} className="w-full">
+            <CarouselContent>
+              {quotes.map((q) => (
+                <CarouselItem key={q.name}>
+                  <article className="border-y border-rule py-10 md:py-12 grid grid-cols-12 gap-x-6 gap-y-4 min-h-[20rem]">
+                    <div className="col-span-12 md:col-span-2">
+                      <span aria-hidden className="font-display text-6xl leading-none text-header-ink">"</span>
+                    </div>
+                    <div className="col-span-12 md:col-span-10">
+                      <p className="font-display italic font-light text-[1.15rem] md:text-[1.35rem] leading-[1.55] text-ink">
+                        {q.quote}
+                      </p>
+                      <p className="mt-6 eyebrow">
+                        {q.name} · <span className="text-ink-soft normal-case tracking-normal font-body text-[0.78rem]">{q.title}</span> · {q.relation}
+                      </p>
+                    </div>
+                  </article>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="mt-6 flex items-center justify-end gap-3">
+              <CarouselPrevious className="static translate-y-0" />
+              <CarouselNext className="static translate-y-0" />
             </div>
-          </Reveal>
-        ))}
+          </Carousel>
+        </Reveal>
       </div>
     </div>
   </section>
