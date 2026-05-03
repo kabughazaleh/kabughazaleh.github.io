@@ -7,11 +7,11 @@ const groups = [
     items: [
       "Customer-facing engagement",
       "Post-silicon verification",
+      "Product ramp & release",
       "Design of experiment (DOE)",
       "ATE & bench measurement",
       "Mixed-signal, digital, and RF debug",
-      "Fab corner & parametric analysis",
-      "Product ramp & release",
+      "Statistical data analysis",
     ],
   },
   {
