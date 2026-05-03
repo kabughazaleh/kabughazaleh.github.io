@@ -49,7 +49,7 @@ export const Nav = () => {
                 <a
                   href={l.href}
                   onClick={(e) => { e.preventDefault(); handleNav(l.href); }}
-                  className="font-body text-[0.78rem] uppercase tracking-[0.2em] text-ink-soft hover:text-ink transition-colors"
+                  className="font-body text-[0.78rem] uppercase tracking-[0.2em] text-ink hover:text-primary transition-colors"
                 >
                   {l.label}
                 </a>
