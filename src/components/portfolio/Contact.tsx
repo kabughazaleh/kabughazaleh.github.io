@@ -9,7 +9,7 @@ export const Contact = () => (
       <div className="col-span-12 md:col-span-9 md:col-start-4">
         <Reveal>
           <p className="font-display font-light text-3xl md:text-5xl leading-tight text-ink tracking-tight">
-            Based in Hillsboro, Oregon.<br />
+            Currently in Hillsboro, Oregon.<br />
             Open to thoughtful conversations.
           </p>
         </Reveal>
