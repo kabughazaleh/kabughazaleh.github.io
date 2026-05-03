@@ -2,7 +2,7 @@ import { Reveal } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
 
 export const About = () => (
-  <section id="about" className="py-16 md:py-20 border-t-2 border-rule">
+  <section id="about" className="py-12 md:py-14 border-t-2 border-rule">
     <div className="mx-auto max-w-6xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
       <SectionHeader number="01" label="About" title="A practitioner who likes the whole picture." />
 
