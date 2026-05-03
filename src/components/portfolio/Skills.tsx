@@ -27,6 +27,7 @@ const groups = [
   {
     label: "Programming & Communication",
     items: [
+      "Statistical data analysis",
       "Python, C++",
       "Unix / Linux shell scripting",
       "Technical writing & documentation",
