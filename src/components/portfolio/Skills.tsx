@@ -11,7 +11,6 @@ const groups = [
       "Design of experiment (DOE)",
       "ATE & bench measurement",
       "Mixed-signal, digital, and RF debug",
-      "Statistical data analysis",
     ],
   },
   {
