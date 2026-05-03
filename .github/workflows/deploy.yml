@@ -26,9 +26,7 @@ jobs:
       - run: npm ci
       - name: Build
         env:
-          # If hosting at https://<user>.github.io/<repo-name>/, this resolves to "/<repo-name>/".
-          # For a user/organization site or custom domain, override by setting VITE_BASE_PATH to "/".
-          VITE_BASE_PATH: /${{ github.event.repository.name }}/
+          VITE_BASE_PATH: /
         run: npm run build
       - name: SPA fallback (copy index.html to 404.html)
         run: cp dist/index.html dist/404.html
