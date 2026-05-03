@@ -44,8 +44,8 @@ export const Skills = () => (
 
       <div className="col-span-12 md:col-span-9 md:col-start-4 grid grid-cols-1 sm:grid-cols-3 gap-10">
         {groups.map((g, i) => (
-          <Reveal key={g.label} delay={i * 100}>
-            <h3 className="font-display text-sm uppercase tracking-[0.18em] text-ink mb-5">
+          <Reveal key={g.label} delay={i * 100} className="flex flex-col">
+            <h3 className="font-display text-sm uppercase tracking-[0.18em] text-ink mb-5 min-h-[1.5rem]">
               {g.label}
             </h3>
             <ul className="space-y-2.5 font-body text-[0.95rem] leading-relaxed text-ink-soft">
