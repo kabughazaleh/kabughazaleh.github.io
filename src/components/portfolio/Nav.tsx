@@ -59,7 +59,7 @@ export const Nav = () => {
 
           <button
             type="button"
-            className="md:hidden font-body text-[0.78rem] uppercase tracking-[0.2em] text-ink-soft"
+            className="md:hidden font-body text-[0.78rem] uppercase tracking-[0.2em] text-ink"
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-controls="mobile-menu"
