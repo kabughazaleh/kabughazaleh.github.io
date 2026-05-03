@@ -41,7 +41,7 @@ All colors MUST be HSL.
     --ink-soft: 30 8% 28%;
     --paper: 42 26% 94%;
     --paper-deep: 36 26% 86%;
-    --rule: 36 20% 82%;
+    --rule: 28 21% 35%;            /* #6b5a47 walnut — bold rule */
 
     --radius: 0.125rem;
 
