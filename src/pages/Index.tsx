@@ -38,6 +38,7 @@ const Index = () => {
       <Experience />
       <Testimonials />
       <Contact />
+      <BgPicker />
     </main>
   );
 };
