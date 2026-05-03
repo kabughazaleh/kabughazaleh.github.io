@@ -42,6 +42,7 @@ All colors MUST be HSL.
     --paper: 42 26% 94%;
     --paper-deep: 36 26% 86%;
     --rule: 36 20% 82%;
+    --section-rule: 14 41% 47%;      /* #a8624a soft rust bold separator */
 
     --radius: 0.125rem;
 
@@ -131,6 +132,9 @@ All colors MUST be HSL.
   }
   .rule {
     @apply border-t border-[hsl(var(--rule))];
+  }
+  .section-rule {
+    border-top: 2px solid hsl(var(--section-rule));
   }
   .link-underline {
     @apply relative inline-block;
