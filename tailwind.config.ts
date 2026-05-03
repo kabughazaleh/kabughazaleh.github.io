@@ -23,7 +23,6 @@ export default {
         paper: "hsl(var(--paper))",
         "paper-deep": "hsl(var(--paper-deep))",
         rule: "hsl(var(--rule))",
-        "header-ink": "hsl(var(--header-ink))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -41,7 +41,7 @@ const items = [
 ];
 
 export const Accomplishments = () => (
-  <section id="accomplishments" className="py-12 md:py-14 border-t-2 border-rule">
+  <section id="accomplishments" className="py-16 md:py-20 border-t-2 border-rule">
     <div className="mx-auto max-w-6xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
       <SectionHeader number="03" label="Selected Accomplishments" title="What each chapter set out to do." />
 
