@@ -18,7 +18,7 @@ export const Hero = () => (
           <p className="col-span-12 md:col-span-9 font-display text-xl md:text-2xl leading-snug text-ink-soft font-light">
             Technical Customer Interface &<br className="hidden md:block" /> Product Development Engineer.
           </p>
-          <p className="col-span-12 md:col-span-6 md:col-start-4 mt-3 font-body text-sm md:text-[0.95rem] leading-relaxed text-ink-soft/80 italic text-center">
+          <p className="col-span-12 md:col-span-6 md:col-start-2 mt-2 font-body text-sm md:text-[0.95rem] leading-relaxed text-ink-soft/80 italic">
             Two decades of bringing RF, silicon, and systems together — quietly, carefully, and with the customer in the room.
           </p>
         </Reveal>
