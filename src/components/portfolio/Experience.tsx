@@ -21,7 +21,7 @@ const roles = [
     tag: "Bench · Scripting",
   },
   { company: "Apolent · TI contract", role: "Principal Engineer", years: "2010 – 2011", tag: "Verification · Debug" },
-  { company: "Texas Instruments", role: "Product Engineer", years: "2003 – 2009", tag: "Digital ASIC · Production" },
+  { company: "Texas Instruments", role: "Product Engineer", years: "2003 – 2009", tag: "Digital · ASIC · Production" },
   { company: "Teradyne", role: "Test Applications", years: "2000 – 2003", tag: "Mixed Signal · ATE · Training" },
 ];
 
