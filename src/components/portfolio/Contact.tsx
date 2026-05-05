@@ -2,19 +2,19 @@ import { Reveal } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
 
 export const Contact = () => (
-  <section id="contact" className="section-card mx-auto max-w-7xl my-6 md:my-8 px-2 py-12 md:py-16">
-    <div className="mx-auto max-w-7xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
+  <section id="contact" className="section-card mx-auto max-w-7xl my-6 md:my-8 px-2 py-8 md:py-16">
+    <div className="mx-auto max-w-7xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-6 md:gap-y-10">
       <SectionHeader number="06" label="Contact" title="Where to find me." />
 
       <div className="col-span-12 md:col-span-9 md:col-start-4">
         <Reveal>
-          <p className="font-display font-light text-3xl md:text-5xl leading-tight text-ink tracking-tight">
+          <p className="font-display font-light text-2xl md:text-5xl leading-tight text-ink tracking-tight">
             In Hillsboro, Oregon.<br />
             Open to thoughtful conversations.
           </p>
         </Reveal>
 
-        <Reveal delay={140} className="mt-12 flex flex-wrap items-center gap-x-10 gap-y-4">
+        <Reveal delay={140} className="mt-6 md:mt-12 flex flex-wrap items-center gap-x-10 gap-y-3">
           <span className="font-body text-base text-ink-soft">Hillsboro, OR · USA</span>
           <a
             href="https://www.linkedin.com/in/kabughazaleh/"
@@ -28,7 +28,7 @@ export const Contact = () => (
       </div>
     </div>
 
-    <footer className="mt-24 md:mt-32 border-t border-rule">
+    <footer className="mt-12 md:mt-32 border-t border-rule">
       <div className="mx-auto max-w-7xl px-6 md:px-10 py-8 flex flex-wrap justify-between gap-4">
         <p className="font-body text-xs uppercase tracking-[0.2em] text-ink-soft">
           Khalid Abughazaleh — Portfolio
