@@ -40,7 +40,7 @@ export const Experience = () => (
                   <p className="font-display text-lg md:text-xl text-ink leading-tight font-normal">{r.company}</p>
                   <p className="font-body text-sm text-ink-soft mt-1">{r.role}</p>
                 </div>
-                <p className="col-span-12 md:col-span-3 mt-2 md:mt-0 font-body text-xs uppercase tracking-[0.18em] text-ink-soft md:text-right">
+                <p className="col-span-12 md:col-span-3 mt-2 md:mt-0 font-body text-xs uppercase tracking-[0.18em] text-ink-soft md:text-right md:whitespace-nowrap">
                   {r.tag}
                 </p>
               </div>
