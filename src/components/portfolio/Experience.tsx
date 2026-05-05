@@ -31,7 +31,7 @@ export const Experience = () => (
       <SectionHeader number="04" label="Experience Highlights" title="Experience, at a glance." />
 
       <div className="col-span-12 md:col-span-9 md:col-start-4">
-        <ul className="divide-y divide-rule border-y border-rule">
+        <ul className="divide-y divide-rule border-b md:border-y border-rule">
           {roles.map((r, i) => (
             <Reveal key={r.company + r.years} delay={i * 50} as="li">
               <div className="grid grid-cols-12 gap-x-6 py-6 md:py-7 items-baseline">

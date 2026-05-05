@@ -28,7 +28,7 @@ export const Contact = () => (
       </div>
     </div>
 
-    <footer className="mt-12 md:mt-32 border-t border-rule">
+    <footer className="mt-4 md:mt-32 border-t border-rule">
       <div className="mx-auto max-w-7xl px-6 md:px-10 py-8 flex flex-wrap justify-between gap-4">
         <p className="font-body text-xs uppercase tracking-[0.2em] text-ink-soft">
           Khalid Abughazaleh — Portfolio

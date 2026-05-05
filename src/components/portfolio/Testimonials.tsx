@@ -65,7 +65,7 @@ export const Testimonials = () => (
     <div className="mx-auto max-w-7xl px-6 md:px-10 grid grid-cols-12 gap-x-6 gap-y-10">
       <SectionHeader number="05" label="In Their Words" title="What people who've worked with me have said." />
 
-      <div className="col-span-12 md:col-span-9 md:col-start-4 divide-y divide-rule border-y border-rule">
+      <div className="col-span-12 md:col-span-9 md:col-start-4 divide-y divide-rule border-b md:border-y border-rule">
         {quotes.map((q, i) => (
           <Reveal key={q.name} delay={i * 40} as="article">
             <div className="py-8 md:py-12 grid grid-cols-12 gap-x-6 gap-y-2 md:gap-y-4">
