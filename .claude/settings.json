@@ -27,7 +27,9 @@
       "Edit(tsconfig*.json)",
       "Bash(git mv*)",
       "Bash(rm*)",
-      "Bash(mv*)"
+      "Bash(mv*)",
+      "Bash(git config user.email*)",
+      "Bash(git config --global user.email*)"
     ],
     "deny": [
       "Read(.env)",

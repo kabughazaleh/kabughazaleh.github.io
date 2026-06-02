@@ -33,6 +33,12 @@ Act as a maintainer for this site. Prefer minimal, targeted edits over refactors
 - Do not modify publishing workflow files
 - When unsure whether something is structural, ask first
 
+## Git identity / privacy
+- Never write any email address into commits, files, `.md` docs, or config. Git does not require an email — commit with an empty email (`kabughazaleh <>`).
+- The repo git config is set to `user.name = kabughazaleh` and an empty `user.email`. Keep it that way; do not set a personal or noreply email.
+- When making commits, do not add a `Co-Authored-By` trailer or any other line containing an email address.
+- If a tool or step would introduce an email, omit it instead and flag it.
+
 ---
 
 ## What this is
