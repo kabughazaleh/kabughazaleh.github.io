@@ -6,6 +6,7 @@ import { Accomplishments } from "@/components/portfolio/Accomplishments";
 import { Experience } from "@/components/portfolio/Experience";
 import { Testimonials } from "@/components/portfolio/Testimonials";
 import { Contact } from "@/components/portfolio/Contact";
+import { ThemeSwitcher } from "@/components/portfolio/ThemeSwitcher";
 
 import { useEffect } from "react";
 
@@ -38,6 +39,7 @@ const Index = () => {
       <Experience />
       <Testimonials />
       <Contact />
+      <ThemeSwitcher />
     </main>
   );
 };
