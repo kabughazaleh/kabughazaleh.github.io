@@ -58,6 +58,16 @@ npm run test:watch  # Vitest in watch mode
 
 Run a single test file: `npx vitest run src/test/example.test.ts`. Tests live in `src/**/*.{test,spec}.{ts,tsx}` and run in jsdom with globals enabled (`vitest.config.ts`, setup in `src/test/setup.ts`). There is currently only a placeholder test.
 
+### `npm install` on this machine — use the system CA
+
+This Windows machine runs a TLS-inspecting network filter (`nllMonFltProxy`), so Node's bundled CA bundle rejects the registry's intercepted certificate. A plain `npm install` fails with the misleading error `Exit handler never called!` (the real cause, visible in the npm debug log, is `UNABLE_TO_VERIFY_LEAF_SIGNATURE`). Fix by telling Node to trust the Windows system certificate store:
+
+```powershell
+$env:NODE_OPTIONS="--use-system-ca"; npm install
+```
+
+Do **not** "fix" this by setting `strict-ssl false` or a custom registry — the registry config is already correct; only the CA trust source is the issue.
+
 ## Architecture
 
 - **Entry flow**: `src/main.tsx` → `src/App.tsx` (providers: React Query, Tooltip, two Toasters, BrowserRouter) → `src/pages/Index.tsx`.
